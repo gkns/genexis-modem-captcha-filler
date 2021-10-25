@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Genexis Modem Admin Page Captcha",
+    "version": "1.0.0",
+    "description": "Fills Genexis Modem Captcha, right on the page load. Tested on Earth-2022 model.",
+    "content_scripts": [
+        {
+            "matches": ["http://*/admin/login.asp"],
+            "js": ["contentscript.js"]
+        }
+    ]
+}
